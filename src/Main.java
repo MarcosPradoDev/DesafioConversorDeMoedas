@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
+    static String historico = "\n";
 
     public static void main(String[] args) {
         boolean interacao = true;
@@ -17,7 +18,8 @@ public class Main {
                     4) Real Brasileiro =>> Dólar
                     5) Dólar           =>> Peso Colombiano
                     6) Peso Colombiano =>> Dólar
-                    7) Sair
+                    7) Histórico
+                    8) Sair
                     
                     Escolha uma opção valida:
                     ****************************************************
@@ -49,8 +51,12 @@ public class Main {
                     converteValor("COP", "USD");
                     break;
 
+                case "7":
+                    System.out.println("Historico até agora: " + historico);
+                    break;
+
                 default:
-                    if (escolha.equals("7")) {
+                    if (escolha.equals("8")) {
                         System.out.println("Fechando o conversor de moedas!");
                         interacao = false;
                     } else {
@@ -63,13 +69,17 @@ public class Main {
 
     private static void converteValor(String moeda1, String moeda2){
         Scanner scanner = new Scanner(System.in);
+        String impressao;
         System.out.println("Digite o valor a ser convertido: ");
         try {
             double valor = scanner.nextDouble();
             scanner.nextLine();
             ConsultaMoeda consultaMoeda = new ConsultaMoeda();
             Conversor novaConversao = consultaMoeda.valorFinal(moeda1, moeda2, valor);
-            System.out.println(valor + " (" + moeda1 + ") " + "Corresponde ao valor final de: " + novaConversao.valorFinal() + " (" + moeda2 + ") ");
+            impressao = valor + " (" + moeda1 + ") " + "Corresponde ao valor final de: " + novaConversao.valorFinal() + " (" + moeda2 + ") ";
+            System.out.println(impressao);
+            historico = historico + "\n" + impressao;
+
 
 
         } catch (Exception e){

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31ca811b-548d-48e9-94a2-d09fdaa256c9" name="Changes" comment="Consumo de API FINALIZADO">
+    <list default="true" id="31ca811b-548d-48e9-94a2-d09fdaa256c9" name="Changes" comment="DESAFIO FINALIZADO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conversor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conversor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719849213610</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="DESAFIO FINALIZADO">
+      <option name="closed" value="true" />
+      <created>1719851890048</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719851890048</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -98,6 +105,7 @@
     <MESSAGE value="Add arquivo gson" />
     <MESSAGE value="Add arquivo gson 2" />
     <MESSAGE value="Consumo de API FINALIZADO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Consumo de API FINALIZADO" />
+    <MESSAGE value="DESAFIO FINALIZADO" />
+    <option name="LAST_COMMIT_MESSAGE" value="DESAFIO FINALIZADO" />
   </component>
 </project>
